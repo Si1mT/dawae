@@ -24,28 +24,39 @@ namespace Chernobyl2077Forms
         {
 
         }
-
-        private void button5_Click(object sender, EventArgs e)
-        {
-            int counter = 0;
-            string line;
-
-            // Read the file and display it line by line.  
-            string path = Path.Combine(Directory.GetParent(Directory.GetCurrentDirectory()).Parent.Parent.FullName, "Script");
-            System.IO.StreamReader file =
-                new System.IO.StreamReader(path + @"\" + @"test.txt");
-            while ((line = file.ReadLine()) != null)
-            {
-                counter++;
-                label1.Text = (line);
-            }
-
-            file.Close();
-        }
-
         private void label1_Click(object sender, EventArgs e)
         {
 
         }
+        public string BuIsPr;
+        public void button5_Click(object sender, EventArgs e)
+        {
+
+        }
+        public void Enter_Click(object sender, KeyEventArgs e)
+        {
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void richTextBox1_TextChanged(object sender, EventArgs e)
+        {
+            richTextBox1.AppendText(+"*Mr Bean has finally arrived in chernobyl");
+
+            richTextBox1.AppendText("Mr.B: It's even worse than i thought");
+
+            richTextBox1.AppendText("Mr.B: This place is in ruins and radioactive");
+        }
+        public void ReadText()
+        {
+
+        }
+        public void WaitFunc()
+        {
+        }
+
     }
 }
