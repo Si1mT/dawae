@@ -26,6 +26,7 @@ namespace Chernobyl2077Forms
 
         private void button1_Click(object sender, EventArgs e)
         {
+            new System.Threading.ManualResetEvent(false).WaitOne(1000);
             BuIsPr1 = true;
         }
 
@@ -46,6 +47,7 @@ namespace Chernobyl2077Forms
 
         private void button2_Click(object sender, EventArgs e)
         {
+            new System.Threading.ManualResetEvent(false).WaitOne(1000);
             BuIsPr2 = true;
         }
 
@@ -85,20 +87,32 @@ namespace Chernobyl2077Forms
 
         }
 
-        private void Loading(object sender, EventArgs e)
-        {
-            string path=
-            PictureBox load = new PictureBox();
-            load.Image=Image.FromFile()
-        }
+        //public void Loading()
+        //{
+        //    string path= Path.Combine(Directory.GetParent(Directory.GetCurrentDirectory()).Parent.Parent.FullName, "Script");
+        //    PictureBox load = new PictureBox();
+        //    load.Image = Image.FromFile(path + @"/" + @"giphyy.gif");
+        //    load.Location = new Point(100, 100);
+        //    load.Size = new Size(300, 300);
+        //    Controls.Add(load);
+
+        //    //string path = Path.Combine(Directory.GetParent(Directory.GetCurrentDirectory()).Parent.Parent.FullName, "Script");
+        //    //PictureBox image = new PictureBox();
+        //    //image.Image = Image.FromFile(path + @"\" + @"image.jpg");
+        //    //image.Location = new Point(100, 100);
+        //    //image.Size = new Size(500, 500);
+        //    //this.Controls.Add(image);
+        //}
         public void Quiz()
         {
             label1.Text = "What is the capital of Germany?";
-            
+            new System.Threading.ManualResetEvent(false).WaitOne(1000);
+            pictureBox1.Visible = true;
             label3.Text = "Hamburg";
             label4.Text = "München";
             label5.Text = "Berlin";
             label6.Text = "Frankfurt";
+            pictureBox1.Visible = false;
             if (BuIsPr3 == true)
             {
                 BuIsPr3 = false;
@@ -123,12 +137,19 @@ namespace Chernobyl2077Forms
 
         private void button3_Click(object sender, EventArgs e)
         {
+            new System.Threading.ManualResetEvent(false).WaitOne(1000);
             BuIsPr3 = true;
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
+            new System.Threading.ManualResetEvent(false).WaitOne(1000);
             BuIsPr4 = true;
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
