@@ -18,6 +18,10 @@ namespace Chernobyl2077Forms
 {
     public partial class Form1 : Form
     {
+        public void m()
+        {
+            label7.Visible = false;
+        }
         public static bool BuIsPr;
         public static bool BuIsPr1;
         public static bool BuIsPr2;
@@ -111,30 +115,74 @@ namespace Chernobyl2077Forms
             checkForBuPr();
             if (BuIsPr3 == true)
             {
+                BuIsPr = false;
                 BuIsPr3 = false;
                 this.button3.BackColor = System.Drawing.Color.LawnGreen;
             }
             if (BuIsPr1 == true)
             {
+                BuIsPr = false;
                 BuIsPr1 = false;
                 this.button1.BackColor = System.Drawing.Color.Red;
+                WrAns();
+
             }
             if (BuIsPr2 == true)
             {
+                BuIsPr = false;
                 BuIsPr2 = false;
                 this.button2.BackColor = System.Drawing.Color.Red;
+                WrAns();
             }
             if (BuIsPr4 == true)
             {
+                BuIsPr = false;
                 BuIsPr4 = false;
                 this.button4.BackColor = System.Drawing.Color.Red;
+                WrAns();
             }
-            DeBuSet();
+            //DeBuSet();
             Quiz2();
 
         }
-        public static void Quiz2()
+        public void Quiz2()
         {
+            DeBuSet();
+            label1.Text = "What is the capital of Uganda";
+            label3.Text = "Jinja";
+            label4.Text = "Kampala";
+            label5.Text = "Gulu";
+            label6.Text = "Lira";
+            checkForBuPr();
+            if (BuIsPr2 == true)
+            {
+
+                BuIsPr = false;
+                BuIsPr2 = false;
+                this.button2.BackColor = System.Drawing.Color.LawnGreen;
+            }
+            if (BuIsPr1 == true)
+            {
+
+                BuIsPr = false;
+                BuIsPr1 = false;
+                this.button1.BackColor = System.Drawing.Color.Red;
+
+            }
+            if (BuIsPr3 == true)
+            {
+                BuIsPr = false;
+                BuIsPr3 = false;
+                this.button3.BackColor = System.Drawing.Color.Red;
+
+            }
+            if (BuIsPr4 == true)
+            {
+                BuIsPr = false;
+                BuIsPr4 = false;
+                WrAns();
+
+            }
 
         }
         public static void checkForBuPr()
@@ -151,6 +199,35 @@ namespace Chernobyl2077Forms
             this.button3.BackColor = System.Drawing.Color.Gainsboro;
             this.button4.BackColor = System.Drawing.Color.Gainsboro;
         }
+        public void WrAns()
+        {
+            this.button5.Visible = false;
+            this.button1.Visible = false;
+            this.button2.Visible = false;
+            this.button3.Visible = false;
+            this.button4.Visible = false;
+            this.label1.Visible = false;
+            this.label3.Visible = false;
+            this.label4.Visible = false;
+            this.label5.Visible = false;
+            this.label6.Visible = false;
+            label7.Visible = true;
+            while (BuIsPr == false)
+            {
+                Application.DoEvents();
+            }
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+
+        }
+        //public void Timer1sec()
+        //{
+        //        System.Timers.Timer aTimer = new System.Timers.Timer();
+        //        aTimer.Interval = 5000;
+        //        aTimer.Enabled = true;
+        //}
 
     }
 }
