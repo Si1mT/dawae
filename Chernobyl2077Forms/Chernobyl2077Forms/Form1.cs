@@ -10,11 +10,15 @@ using System.Windows.Forms;
 using System.IO;
 using System.Diagnostics;
 using System.Threading;
+using System.Threading;
+using System.Timers;
+using System.Windows.Forms;
 
 namespace Chernobyl2077Forms
 {
     public partial class Form1 : Form
     {
+        public static bool BuIsPr;
         public static bool BuIsPr1;
         public static bool BuIsPr2;
         public static bool BuIsPr3;
@@ -26,6 +30,7 @@ namespace Chernobyl2077Forms
 
         private void button1_Click(object sender, EventArgs e)
         {
+            BuIsPr = true;
             BuIsPr1 = true;
         }
 
@@ -46,6 +51,7 @@ namespace Chernobyl2077Forms
 
         private void button2_Click(object sender, EventArgs e)
         {
+            BuIsPr = true;
             BuIsPr2 = true;
         }
 
@@ -56,7 +62,7 @@ namespace Chernobyl2077Forms
             this.button2.Visible = true;
             this.button3.Visible = true;
             this.button4.Visible = true;
-            Quiz();
+            Quiz1();
            
         }
 
@@ -84,17 +90,29 @@ namespace Chernobyl2077Forms
         {
 
         }
-        public void Quiz()
+        private void button3_Click(object sender, EventArgs e)
+        {
+            BuIsPr = true;
+            BuIsPr3 = true;
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            BuIsPr = true;
+            BuIsPr4 = true;
+        }
+        public void Quiz1()
         {
             label1.Text = "What is the capital of Germany?";
             label3.Text = "Hamburg";
             label4.Text = "München";
             label5.Text = "Berlin";
             label6.Text = "Frankfurt";
+            checkForBuPr();
             if (BuIsPr3 == true)
             {
                 BuIsPr3 = false;
-                this.button1.BackColor = System.Drawing.Color.LawnGreen;
+                this.button3.BackColor = System.Drawing.Color.LawnGreen;
             }
             if (BuIsPr1 == true)
             {
@@ -109,18 +127,30 @@ namespace Chernobyl2077Forms
             if (BuIsPr4 == true)
             {
                 BuIsPr4 = false;
-                this.button1.BackColor = System.Drawing.Color.Red;
+                this.button4.BackColor = System.Drawing.Color.Red;
+            }
+            DeBuSet();
+            Quiz2();
+
+        }
+        public static void Quiz2()
+        {
+
+        }
+        public static void checkForBuPr()
+        {
+            while (BuIsPr == false)
+            {
+                Application.DoEvents();
             }
         }
-
-        private void button3_Click(object sender, EventArgs e)
+        public void DeBuSet()
         {
-            BuIsPr3 = true;
+            this.button1.BackColor = System.Drawing.Color.Gainsboro;
+            this.button2.BackColor = System.Drawing.Color.Gainsboro;
+            this.button3.BackColor = System.Drawing.Color.Gainsboro;
+            this.button4.BackColor = System.Drawing.Color.Gainsboro;
         }
 
-        private void button4_Click(object sender, EventArgs e)
-        {
-            BuIsPr4 = true;
-        }
     }
 }
