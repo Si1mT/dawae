@@ -84,9 +84,17 @@ namespace Chernobyl2077Forms
         {
 
         }
+
+        private void Loading(object sender, EventArgs e)
+        {
+            string path=
+            PictureBox load = new PictureBox();
+            load.Image=Image.FromFile()
+        }
         public void Quiz()
         {
             label1.Text = "What is the capital of Germany?";
+            
             label3.Text = "Hamburg";
             label4.Text = "München";
             label5.Text = "Berlin";
