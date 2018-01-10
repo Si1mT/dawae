@@ -94,10 +94,13 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(216, 47);
+            this.label1.Location = new System.Drawing.Point(194, 47);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(0, 13);
+            this.label1.Size = new System.Drawing.Size(27, 13);
             this.label1.TabIndex = 4;
+            this.label1.Text = "Blya";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label1.Visible = false;
             this.label1.Click += new System.EventHandler(this.label1_Click_1);
             // 
             // label2
@@ -164,8 +167,8 @@
             this.label7.Size = new System.Drawing.Size(121, 25);
             this.label7.TabIndex = 11;
             this.label7.Text = "Game Over";
-            this.label7.Click += new System.EventHandler(this.label7_Click);
             this.label7.Visible = false;
+            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // Form1
             // 

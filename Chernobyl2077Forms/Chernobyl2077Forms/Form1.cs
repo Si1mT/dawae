@@ -20,6 +20,7 @@ namespace Chernobyl2077Forms
     {
         public void m()
         {
+            label1.Visible = false;
             label7.Visible = false;
         }
         public static bool BuIsPr;
@@ -107,7 +108,8 @@ namespace Chernobyl2077Forms
         }
         public void Quiz1()
         {
-            label1.Text = "What is the capital of Germany?";
+            this.label1.Visible = true;
+            label1.Text = "What is the capital of Germany";
             label3.Text = "Hamburg";
             label4.Text = "München";
             label5.Text = "Berlin";
@@ -167,6 +169,7 @@ namespace Chernobyl2077Forms
                 BuIsPr = false;
                 BuIsPr1 = false;
                 this.button1.BackColor = System.Drawing.Color.Red;
+                WrAns();
 
             }
             if (BuIsPr3 == true)
@@ -174,6 +177,7 @@ namespace Chernobyl2077Forms
                 BuIsPr = false;
                 BuIsPr3 = false;
                 this.button3.BackColor = System.Drawing.Color.Red;
+                WrAns();
 
             }
             if (BuIsPr4 == true)
@@ -181,7 +185,6 @@ namespace Chernobyl2077Forms
                 BuIsPr = false;
                 BuIsPr4 = false;
                 WrAns();
-
             }
 
         }
