@@ -85,12 +85,14 @@
             // 
             // buttonNext
             // 
-            this.buttonNext.Location = new System.Drawing.Point(15, 260);
+            this.buttonNext.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.buttonNext.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonNext.Location = new System.Drawing.Point(15, 243);
             this.buttonNext.Name = "buttonNext";
             this.buttonNext.Size = new System.Drawing.Size(75, 23);
             this.buttonNext.TabIndex = 5;
             this.buttonNext.Text = "Next";
-            this.buttonNext.UseVisualStyleBackColor = true;
+            this.buttonNext.UseVisualStyleBackColor = false;
             this.buttonNext.Click += new System.EventHandler(this.button5_Click);
             // 
             // Form1
