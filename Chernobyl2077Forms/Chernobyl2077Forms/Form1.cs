@@ -115,34 +115,7 @@ namespace Chernobyl2077Forms
             label5.Text = "Berlin";
             label6.Text = "Frankfurt";
             checkForBuPr();
-            if (BuIsPr3 == true)
-            {
-                BuIsPr = false;
-                BuIsPr3 = false;
-                this.button3.BackColor = System.Drawing.Color.LawnGreen;
-            }
-            if (BuIsPr1 == true)
-            {
-                BuIsPr = false;
-                BuIsPr1 = false;
-                this.button1.BackColor = System.Drawing.Color.Red;
-                WrAns();
-
-            }
-            if (BuIsPr2 == true)
-            {
-                BuIsPr = false;
-                BuIsPr2 = false;
-                this.button2.BackColor = System.Drawing.Color.Red;
-                WrAns();
-            }
-            if (BuIsPr4 == true)
-            {
-                BuIsPr = false;
-                BuIsPr4 = false;
-                this.button4.BackColor = System.Drawing.Color.Red;
-                WrAns();
-            }
+            RiAns3();
             //DeBuSet();
             Quiz2();
 
@@ -156,39 +129,80 @@ namespace Chernobyl2077Forms
             label5.Text = "Gulu";
             label6.Text = "Lira";
             checkForBuPr();
-            if (BuIsPr2 == true)
-            {
-
-                BuIsPr = false;
-                BuIsPr2 = false;
-                this.button2.BackColor = System.Drawing.Color.LawnGreen;
-            }
-            if (BuIsPr1 == true)
-            {
-
-                BuIsPr = false;
-                BuIsPr1 = false;
-                this.button1.BackColor = System.Drawing.Color.Red;
-                WrAns();
-
-            }
-            if (BuIsPr3 == true)
-            {
-                BuIsPr = false;
-                BuIsPr3 = false;
-                this.button3.BackColor = System.Drawing.Color.Red;
-                WrAns();
-
-            }
-            if (BuIsPr4 == true)
-            {
-                BuIsPr = false;
-                BuIsPr4 = false;
-                WrAns();
-            }
-
+            RiAns2();
+            Quiz3();
         }
-        public static void checkForBuPr()
+        public void Quiz3()
+        {
+            DeBuSet();
+            label1.Text = "How many countries in Europe";
+            label3.Text = "53";
+            label4.Text = "a bazilion";
+            label5.Text = "37";
+            label6.Text = "44";
+            checkForBuPr();
+            RiAns4();
+            Quiz4();
+        }
+        public void Quiz4()
+        {
+            DeBuSet();
+            label1.Text = "How many states in USA";
+            label3.Text = "50";
+            label4.Text = "about a million";
+            label5.Text = "1";
+            label6.Text = "16";
+            checkForBuPr();
+            RiAns1();
+            Quiz5();
+        }
+        public void Quiz5()
+        {
+            DeBuSet();
+            label1.Text = "How many countries in Africa";
+            label3.Text = "53";
+            label4.Text = "a few";
+            label5.Text = "54";
+            label6.Text = "45";
+            checkForBuPr();
+            RiAns3();
+            Quiz6();
+        }
+        public void Quiz6()
+        {
+            DeBuSet();
+            label1.Text = "How many counties in Estonia";
+            label3.Text = "13";
+            label4.Text = "15";
+            label5.Text = "16";
+            label6.Text = "19";
+            checkForBuPr();
+            RiAns2();
+            Quiz7();
+        }
+        public void Quiz7()
+        {
+            DeBuSet();
+            label1.Text = "What is the capital city of USA";
+            label3.Text = "Washington";
+            label4.Text = "New York";
+            label5.Text = "Boston";
+            label6.Text = "London";
+            checkForBuPr();
+            RiAns1();
+            Quiz8();
+        }
+        public void Quiz8()
+        {
+            DeBuSet();
+            label1.Text = "What is the capital city of UK";
+            label3.Text = "Washington";
+            label4.Text = "Glasgow";
+            label5.Text = "Boston";
+            label6.Text = "London";
+            checkForBuPr();
+        }
+            public static void checkForBuPr()
         {
             while (BuIsPr == false)
             {
@@ -219,6 +233,144 @@ namespace Chernobyl2077Forms
             {
                 Application.DoEvents();
             }
+        }
+        public void RiAns1()
+        {
+            if (BuIsPr1 == true)
+            {
+
+                BuIsPr = false;
+                BuIsPr1 = false;
+                this.button1.BackColor = System.Drawing.Color.LawnGreen;
+            }
+            if (BuIsPr2 == true)
+            {
+
+                BuIsPr = false;
+                BuIsPr2 = false;
+                this.button2.BackColor = System.Drawing.Color.Red;
+                WrAns();
+
+            }
+            if (BuIsPr3 == true)
+            {
+                BuIsPr = false;
+                BuIsPr3 = false;
+                this.button3.BackColor = System.Drawing.Color.Red;
+                WrAns();
+
+            }
+            if (BuIsPr4 == true)
+            {
+                BuIsPr = false;
+                BuIsPr4 = false;
+                this.button4.BackColor = System.Drawing.Color.Red;
+                WrAns();
+            }
+        }
+        public void RiAns2()
+        {
+            if (BuIsPr2 == true)
+            {
+
+                BuIsPr = false;
+                BuIsPr2 = false;
+                this.button2.BackColor = System.Drawing.Color.LawnGreen;
+            }
+            if (BuIsPr1 == true)
+            {
+
+                BuIsPr = false;
+                BuIsPr1 = false;
+                this.button1.BackColor = System.Drawing.Color.Red;
+                WrAns();
+
+            }
+            if (BuIsPr3 == true)
+            {
+                BuIsPr = false;
+                BuIsPr3 = false;
+                this.button3.BackColor = System.Drawing.Color.Red;
+                WrAns();
+
+            }
+            if (BuIsPr4 == true)
+            {
+                BuIsPr = false;
+                BuIsPr4 = false;
+                this.button4.BackColor = System.Drawing.Color.Red;
+                WrAns();
+            }
+        }
+        public void RiAns3()
+        {
+            if (BuIsPr3 == true)
+            {
+
+                BuIsPr = false;
+                BuIsPr3 = false;
+                this.button3.BackColor = System.Drawing.Color.LawnGreen;
+            }
+            if (BuIsPr1 == true)
+            {
+                BuIsPr = false;
+                BuIsPr1 = false;
+                this.button1.BackColor = System.Drawing.Color.Red;
+                WrAns();
+
+            }
+            if (BuIsPr2 == true)
+            {
+
+                BuIsPr = false;
+                BuIsPr2 = false;
+                this.button2.BackColor = System.Drawing.Color.Red;
+                WrAns();
+
+            }
+
+            if (BuIsPr4 == true)
+            {
+                BuIsPr = false;
+                BuIsPr4 = false;
+                this.button4.BackColor = System.Drawing.Color.Red;
+                WrAns();
+            }
+        }
+        public void RiAns4()
+        {
+            if (BuIsPr4 == true)
+            {
+
+                BuIsPr = false;
+                BuIsPr4 = false;
+                this.button4.BackColor = System.Drawing.Color.LawnGreen;
+            }
+            if (BuIsPr1 == true)
+            {
+                BuIsPr = false;
+                BuIsPr1 = false;
+                this.button1.BackColor = System.Drawing.Color.Red;
+                WrAns();
+            }
+            if (BuIsPr2 == true)
+            {
+
+                BuIsPr = false;
+                BuIsPr2 = false;
+                this.button2.BackColor = System.Drawing.Color.Red;
+                WrAns();
+
+            }
+            if (BuIsPr3 == true)
+            {
+                BuIsPr = false;
+                BuIsPr3 = false;
+                this.button3.BackColor = System.Drawing.Color.Red;
+                WrAns();
+
+            }
+            
         }
 
         private void label7_Click(object sender, EventArgs e)
