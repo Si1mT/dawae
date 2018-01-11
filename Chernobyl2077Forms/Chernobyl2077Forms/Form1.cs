@@ -38,6 +38,9 @@ namespace Chernobyl2077Forms
             InitializeComponent();
         }
 
+        PictureBox image2 = new PictureBox();
+        string path = Path.Combine(Directory.GetParent(Directory.GetCurrentDirectory()).Parent.Parent.FullName, "Images");
+
         private void button1_Click(object sender, EventArgs e)
         {
             BuIsPr = true;
@@ -81,10 +84,12 @@ namespace Chernobyl2077Forms
            
         }
 
-        public void image()
-        {
-            string path = 
-        }
+        //public void Image()
+        //{
+        //    string path = Path.Combine(Directory.GetParent(Directory.GetCurrentDirectory()).Parent.Parent.FullName, "Images");
+        //    PictureBox image2 = new PictureBox();
+            
+        //}
         private void Form1_Load(object sender, EventArgs e)
         {
 
@@ -120,9 +125,15 @@ namespace Chernobyl2077Forms
             BuIsPr = true;
             BuIsPr4 = true;
         }
+        
+
         public void Quiz1()
         {
             this.label1.Visible = true;
+            image2.Image = Image.FromFile(path + @"/" + @"berlin2.jpg");
+            image2.Location = new Point(782, 13);
+            image2.Size = new Size(400, 500);
+            Controls.Add(image2);
             label1.Text = "What is the capital of Germany";
             label3.Text = "Hamburg";
             label4.Text = "München";
