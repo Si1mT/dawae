@@ -132,8 +132,10 @@ namespace Chernobyl2077Forms
             this.label1.Visible = true;
             image2.Image = Image.FromFile(path + @"/" + @"berlin2.jpg");
             image2.Location = new Point(782, 13);
-            image2.Size = new Size(400, 500);
+            image2.Size = new Size(622, 500);
+            this.image2.SizeMode = PictureBoxSizeMode.StretchImage;
             Controls.Add(image2);
+
             label1.Text = "What is the capital of Germany";
             label3.Text = "Hamburg";
             label4.Text = "München";
@@ -148,6 +150,11 @@ namespace Chernobyl2077Forms
         public void Quiz2()
         {
             DeBuSet();
+            image2.Image = Image.FromFile(path + @"/" + @".jpg");
+            image2.Location = new Point(782, 13);
+            image2.Size = new Size(622, 500);
+            this.image2.SizeMode = PictureBoxSizeMode.StretchImage;
+            Controls.Add(image2);
             label1.Text = "What is the capital of Uganda";
             label3.Text = "Jinja";
             label4.Text = "Kampala";
