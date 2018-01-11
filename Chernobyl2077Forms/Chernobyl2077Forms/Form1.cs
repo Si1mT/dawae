@@ -22,6 +22,7 @@ namespace Chernobyl2077Forms
         {
             label1.Visible = false;
             label7.Visible = false;
+
         }
         public static int score;
         public static bool BuIsPr;
@@ -78,6 +79,9 @@ namespace Chernobyl2077Forms
             this.label13.Size = new System.Drawing.Size(25, 13);
             this.label12.Location = new System.Drawing.Point(646, 30);
             this.label12.Size = new System.Drawing.Size(61, 20);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(1417, 659);
             Quiz1();
            
         }
@@ -267,7 +271,7 @@ namespace Chernobyl2077Forms
         {
             DeBuSet();
             label1.Text = "?How many countries are there in the world";
-            label3.Text = "3, USA, EU and Africa";
+            label3.Text = "7";
             label4.Text = "186";
             label5.Text = "200";
             label6.Text = "195"; //
@@ -306,18 +310,103 @@ namespace Chernobyl2077Forms
         public void Quiz15()
         {
             DeBuSet();
-            label1.Text = "?How many people live in the UK";
+            label1.Text = "?How many people live in Saue, Harjumaa, Estonia";
             // Correct 66,573,504
-            label3.Text = "748 766 66"; //
-            label4.Text = "000 850 69";
-            label5.Text = "Like 5?";
-            label6.Text = "000 570 66";
+            label3.Text = "6065"; //
+            label4.Text = "1337";
+            label5.Text = "5810";
+            label6.Text = "4753";
             checkForBuPr();
-            RiAns1();
-            //Quiz15();
+            RiAns3();
+            Quiz16();
 
         }
+        public void Quiz16()
+        {
+            DeBuSet();
+            label1.Text = "?How much are doge coins worth";
+            // Correct 66,573,504
+            label3.Text = "0,00987 eur"; //
+            label4.Text = "0,00562 eur";
+            label5.Text = "0,0907 eur";
+            label6.Text = "one doge meme";
+            checkForBuPr();
+            RiAns1();
+            Quiz17();
 
+        }
+        public void Quiz17()
+        {
+            DeBuSet();
+            label1.Text = "?How many people live in China";
+            // Correct 1,412,648,363
+            label3.Text = "000 000 412 1"; //
+            label4.Text = "000 850 693 2";
+            label5.Text = "?5";
+            label6.Text = "000 570 430 1";
+            checkForBuPr();
+            RiAns1();
+            Quiz18();
+
+        }
+        public void Quiz18()
+        {
+            DeBuSet();
+            label1.Text = "?Which countries capital city is 'Kiiev'";
+            // Correct 66,573,504
+            label3.Text = "Ukriane"; //
+            label4.Text = "Slovenia";
+            label5.Text = "Poland";
+            label6.Text = "Uganda";
+            checkForBuPr();
+            RiAns1();
+            Quiz19();
+
+        }
+        public void Quiz19()
+        {
+            DeBuSet();
+            label1.Text = "?What is the capital of Slovenia";
+            // Correct 66,573,504
+            label5.Text = "Ljubljana"; //
+            label4.Text = "Celje";
+            label3.Text = "Bled";
+            label6.Text = "?Moscow";
+            checkForBuPr();
+            RiAns3();
+            Quiz20();
+
+        }
+        public void Quiz20()
+        {
+            DeBuSet();
+            label1.Text = "?How many people live in Uganda";
+            // Correct 66,573,504
+            label3.Text = "12 & Knuckles"; //
+            label4.Text = "000 490 41";
+            label5.Text = "000 234 56";
+            label6.Text = "000 570 66";
+            checkForBuPr();
+            RiAns2();
+            QuizEnd();            
+
+        }
+        public void QuizEnd()
+        {
+            this.button5.Visible = false;
+            this.button1.Visible = false;
+            this.button2.Visible = false;
+            this.button3.Visible = false;
+            this.button4.Visible = false;
+            label3.Visible = false;
+            label1.Visible = false;
+            label4.Visible = false;
+            label5.Visible = false;
+            label6.Visible = false;
+            label13.Visible = false;
+            label12.Visible = false;
+            label16.Visible = true;
+        }
 
         public static void checkForBuPr()
         {
@@ -570,6 +659,42 @@ namespace Chernobyl2077Forms
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(772, 659);
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            this.button5.Visible = false;
+            this.button1.Visible = true;
+            this.button2.Visible = true;
+            this.button3.Visible = true;
+            this.button4.Visible = true;
+            this.label12.Visible = true;
+            this.label13.Location = new System.Drawing.Point(704, 35);
+            this.label13.Size = new System.Drawing.Size(25, 13);
+            this.label12.Location = new System.Drawing.Point(646, 30);
+            this.label12.Size = new System.Drawing.Size(61, 20);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(1417, 659);
+            Quiz15();
+        }
+
+        private void checkBox2_CheckedChanged(object sender, EventArgs e)
+        {
+            this.button5.Visible = false;
+            this.button1.Visible = true;
+            this.button2.Visible = true;
+            this.button3.Visible = true;
+            this.button4.Visible = true;
+            this.label12.Visible = true;
+            this.label13.Location = new System.Drawing.Point(704, 35);
+            this.label13.Size = new System.Drawing.Size(25, 13);
+            this.label12.Location = new System.Drawing.Point(646, 30);
+            this.label12.Size = new System.Drawing.Size(61, 20);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(1417, 659);
+            QuizEnd();
         }
         //public void Timer1sec()
         //{
