@@ -40,6 +40,9 @@ namespace Chernobyl2077Forms
             InitializeComponent();
         }
 
+        PictureBox image2 = new PictureBox();
+        string path = Path.Combine(Directory.GetParent(Directory.GetCurrentDirectory()).Parent.Parent.FullName, "Images");
+
         private void button1_Click(object sender, EventArgs e)
         {
             BuIsPr = true;
@@ -124,6 +127,11 @@ namespace Chernobyl2077Forms
         public void Quiz1()
         {
             this.label1.Visible = true;
+            image2.Image = Image.FromFile(path + @"/" + @"berlin2.jpg");
+            image2.Location = new Point(775, 13);
+            image2.Size = new Size(622, 500);
+            this.image2.SizeMode = PictureBoxSizeMode.StretchImage;
+            Controls.Add(image2);
             label1.Text = "?What is the capital of Germany";
             label3.Text = "Hamburg";
             label4.Text = "München";
@@ -138,6 +146,11 @@ namespace Chernobyl2077Forms
         public void Quiz2()
         {
             DeBuSet();
+            image2.Image = Image.FromFile(path + @"/" + @"insert image");
+            image2.Location = new Point(775, 13);
+            image2.Size = new Size(622, 500);
+            this.image2.SizeMode = PictureBoxSizeMode.StretchImage;
+            Controls.Add(image2);
             label1.Text = "?What is the capital of Uganda";
             label3.Text = "Jinja";
             label4.Text = "Kampala"; //
@@ -150,6 +163,11 @@ namespace Chernobyl2077Forms
         public void Quiz3()
         {
             DeBuSet();
+            image2.Image = Image.FromFile(path + @"/" + @"insert image");
+            image2.Location = new Point(775, 13);
+            image2.Size = new Size(622, 500);
+            this.image2.SizeMode = PictureBoxSizeMode.StretchImage;
+            Controls.Add(image2);
             label1.Text = "?How many countries in Europe";
             label3.Text = "53";
             label4.Text = "a bazilion";
@@ -162,6 +180,11 @@ namespace Chernobyl2077Forms
         public void Quiz4()
         {
             DeBuSet();
+            image2.Image = Image.FromFile(path + @"/" + @"insert image");
+            image2.Location = new Point(775, 13);
+            image2.Size = new Size(622, 500);
+            this.image2.SizeMode = PictureBoxSizeMode.StretchImage;
+            Controls.Add(image2);
             label1.Text = "?How many states in USA";
             label3.Text = "50"; //
             label4.Text = "about a million";
@@ -174,6 +197,11 @@ namespace Chernobyl2077Forms
         public void Quiz5()
         {
             DeBuSet();
+            image2.Image = Image.FromFile(path + @"/" + @"insert image");
+            image2.Location = new Point(775, 13);
+            image2.Size = new Size(622, 500);
+            this.image2.SizeMode = PictureBoxSizeMode.StretchImage;
+            Controls.Add(image2);
             label1.Text = "?How many countries in Africa";
             label3.Text = "53";
             label4.Text = "a few";
@@ -186,6 +214,11 @@ namespace Chernobyl2077Forms
         public void Quiz6()
         {
             DeBuSet();
+            image2.Image = Image.FromFile(path + @"/" + @"insert image");
+            image2.Location = new Point(775, 13);
+            image2.Size = new Size(622, 500);
+            this.image2.SizeMode = PictureBoxSizeMode.StretchImage;
+            Controls.Add(image2);
             label1.Text = "?How many counties in Estonia";
             label3.Text = "13";
             label4.Text = "15"; //
@@ -198,6 +231,11 @@ namespace Chernobyl2077Forms
         public void Quiz7()
         {
             DeBuSet();
+            image2.Image = Image.FromFile(path + @"/" + @"insert image");
+            image2.Location = new Point(775, 13);
+            image2.Size = new Size(622, 500);
+            this.image2.SizeMode = PictureBoxSizeMode.StretchImage;
+            Controls.Add(image2);
             label1.Text = "?What is the capital city of USA";
             label3.Text = "Washington"; //
             label4.Text = "New York";
@@ -210,6 +248,11 @@ namespace Chernobyl2077Forms
         public void Quiz8()
         {
             DeBuSet();
+            image2.Image = Image.FromFile(path + @"/" + @"insert image");
+            image2.Location = new Point(775, 13);
+            image2.Size = new Size(622, 500);
+            this.image2.SizeMode = PictureBoxSizeMode.StretchImage;
+            Controls.Add(image2);
             label1.Text = "?What is the capital city of UK";
             label3.Text = "Washing a ton";
             label4.Text = "Glasgow";
@@ -222,6 +265,11 @@ namespace Chernobyl2077Forms
         public void Quiz9()
         {
             DeBuSet();
+            image2.Image = Image.FromFile(path + @"/" + @"insert image");
+            image2.Location = new Point(775, 13);
+            image2.Size = new Size(622, 500);
+            this.image2.SizeMode = PictureBoxSizeMode.StretchImage;
+            Controls.Add(image2);
             label1.Text = "?How many km² is US";
             //label3.Text = "9 965 000";
             //label4.Text = "9 834 000";
@@ -239,6 +287,11 @@ namespace Chernobyl2077Forms
         public void Quiz10()
         {
             DeBuSet();
+            image2.Image = Image.FromFile(path + @"/" + @"insert image");
+            image2.Location = new Point(775, 13);
+            image2.Size = new Size(622, 500);
+            this.image2.SizeMode = PictureBoxSizeMode.StretchImage;
+            Controls.Add(image2);
             label1.Text = "?How many km² is UK";
             //label3.Text = "245 500";
             //label4.Text = "342 495";
@@ -256,6 +309,11 @@ namespace Chernobyl2077Forms
         public void Quiz11()
         {
             DeBuSet();
+            image2.Image = Image.FromFile(path + @"/" + @"insert image");
+            image2.Location = new Point(775, 13);
+            image2.Size = new Size(622, 500);
+            this.image2.SizeMode = PictureBoxSizeMode.StretchImage;
+            Controls.Add(image2);
             label1.Text = "?How many km² is Africa";
             label3.Text = "Three blocks";
             label4.Text = "000 370 30"; //
@@ -269,6 +327,11 @@ namespace Chernobyl2077Forms
         public void Quiz12()
         {
             DeBuSet();
+            image2.Image = Image.FromFile(path + @"/" + @"insert image");
+            image2.Location = new Point(775, 13);
+            image2.Size = new Size(622, 500);
+            this.image2.SizeMode = PictureBoxSizeMode.StretchImage;
+            Controls.Add(image2);
             label1.Text = "?How many countries are there in the world";
             label3.Text = "7";
             label4.Text = "186";
@@ -282,6 +345,11 @@ namespace Chernobyl2077Forms
         public void Quiz13()
         {
             DeBuSet();
+            image2.Image = Image.FromFile(path + @"/" + @"insert image");
+            image2.Location = new Point(775, 13);
+            image2.Size = new Size(622, 500);
+            this.image2.SizeMode = PictureBoxSizeMode.StretchImage;
+            Controls.Add(image2);
             label1.Text = "?How many people live in the US";
             // Correct 326,766,748
             label3.Text = "748 766 326"; //
@@ -295,6 +363,11 @@ namespace Chernobyl2077Forms
         public void Quiz14()
         {
             DeBuSet();
+            image2.Image = Image.FromFile(path + @"/" + @"insert image");
+            image2.Location = new Point(775, 13);
+            image2.Size = new Size(622, 500);
+            this.image2.SizeMode = PictureBoxSizeMode.StretchImage;
+            Controls.Add(image2);
             label1.Text = "?How many people live in the UK";
             // Correct 66,573,504
             label3.Text = "748 766 66"; //
@@ -309,6 +382,11 @@ namespace Chernobyl2077Forms
         public void Quiz15()
         {
             DeBuSet();
+            image2.Image = Image.FromFile(path + @"/" + @"insert image");
+            image2.Location = new Point(775, 13);
+            image2.Size = new Size(622, 500);
+            this.image2.SizeMode = PictureBoxSizeMode.StretchImage;
+            Controls.Add(image2);
             this.label1.Location = new System.Drawing.Point(150, 57);
             label1.Text = "?How many people live in Saue, Harjumaa, Estonia";
             // Correct 66,573,504
@@ -324,6 +402,11 @@ namespace Chernobyl2077Forms
         public void Quiz16()
         {
             DeBuSet();
+            image2.Image = Image.FromFile(path + @"/" + @"insert image");
+            image2.Location = new Point(775, 13);
+            image2.Size = new Size(622, 500);
+            this.image2.SizeMode = PictureBoxSizeMode.StretchImage;
+            Controls.Add(image2);
             this.label1.Location = new System.Drawing.Point(267, 46);
             label1.Text = "?How much are doge coins worth";
             // Correct 66,573,504
@@ -339,6 +422,11 @@ namespace Chernobyl2077Forms
         public void Quiz17()
         {
             DeBuSet();
+            image2.Image = Image.FromFile(path + @"/" + @"insert image");
+            image2.Location = new Point(775, 13);
+            image2.Size = new Size(622, 500);
+            this.image2.SizeMode = PictureBoxSizeMode.StretchImage;
+            Controls.Add(image2);
             label1.Text = "?How many people live in China";
             // Correct 1,412,648,363
             label3.Text = "000 000 412 1"; //
@@ -353,9 +441,14 @@ namespace Chernobyl2077Forms
         public void Quiz18()
         {
             DeBuSet();
-            label1.Text = "?Which countries capital city is 'Kiiev'";
+            image2.Image = Image.FromFile(path + @"/" + @"insert image");
+            image2.Location = new Point(775, 13);
+            image2.Size = new Size(622, 500);
+            this.image2.SizeMode = PictureBoxSizeMode.StretchImage;
+            Controls.Add(image2);
+            label1.Text = "?Which countries capital city is 'Kiev'";
             // Correct 66,573,504
-            label3.Text = "Ukriane"; //
+            label3.Text = "Ukraine"; //
             label4.Text = "Slovenia";
             label5.Text = "Poland";
             label6.Text = "Uganda";
@@ -367,6 +460,11 @@ namespace Chernobyl2077Forms
         public void Quiz19()
         {
             DeBuSet();
+            image2.Image = Image.FromFile(path + @"/" + @"insert image");
+            image2.Location = new Point(775, 13);
+            image2.Size = new Size(622, 500);
+            this.image2.SizeMode = PictureBoxSizeMode.StretchImage;
+            Controls.Add(image2);
             label1.Text = "?What is the capital of Slovenia";
             // Correct 66,573,504
             label5.Text = "Ljubljana"; //
@@ -381,9 +479,14 @@ namespace Chernobyl2077Forms
         public void Quiz20()
         {
             DeBuSet();
+            image2.Image = Image.FromFile(path + @"/" + @"insert image");
+            image2.Location = new Point(775, 13);
+            image2.Size = new Size(622, 500);
+            this.image2.SizeMode = PictureBoxSizeMode.StretchImage;
+            Controls.Add(image2);
             label1.Text = "?How many people live in Uganda";
             // Correct 66,573,504
-            label3.Text = "12 & Knuckles"; //
+            label3.Text = "a few people and Knuckles"; //
             label4.Text = "000 490 41";
             label5.Text = "000 234 56";
             label6.Text = "000 570 66";
@@ -674,7 +777,7 @@ namespace Chernobyl2077Forms
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1417, 659);
-            Quiz15();
+            Quiz20();
         }
 
         private void checkBox2_CheckedChanged(object sender, EventArgs e)
