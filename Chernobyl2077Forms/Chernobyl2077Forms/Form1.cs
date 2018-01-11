@@ -498,7 +498,9 @@ namespace Chernobyl2077Forms
             image2.Location = new Point(0, 0);
             image2.Size = new Size(1417, 659);
             this.image2.SizeMode = PictureBoxSizeMode.StretchImage;
-            //this.image2.Visible = ;
+            this.label15.Visible = false;
+            this.button7.Visible = false;
+            this.button8.Visible = false;
             this.button5.Visible = false;
             this.button1.Visible = false;
             this.button2.Visible = false;
