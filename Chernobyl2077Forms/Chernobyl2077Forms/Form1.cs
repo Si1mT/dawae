@@ -132,10 +132,10 @@ namespace Chernobyl2077Forms
             image2.Size = new Size(622, 500);
             this.image2.SizeMode = PictureBoxSizeMode.StretchImage;
             Controls.Add(image2);
-            label1.Text = "?What is the capital of Germany";
+            label1.Text = "What is the capital of Germany";
             label3.Text = "Hamburg";
             label4.Text = "München";
-            label5.Text = "Berlin"; //
+            label5.Text = "Berlin";
             label6.Text = "Frankfurt";
             checkForBuPr();
             RiAns3();
@@ -146,14 +146,14 @@ namespace Chernobyl2077Forms
         public void Quiz2()
         {
             DeBuSet();
-            image2.Image = Image.FromFile(path + @"/" + @"insert image");
+            image2.Image = Image.FromFile(path + @"/" + @"Kampala.jpg");
             image2.Location = new Point(775, 13);
-            image2.Size = new Size(622, 500);
+            image2.Size = new Size(622, 333);
             this.image2.SizeMode = PictureBoxSizeMode.StretchImage;
             Controls.Add(image2);
-            label1.Text = "?What is the capital of Uganda";
+            label1.Text = "What is the capital of Uganda";
             label3.Text = "Jinja";
-            label4.Text = "Kampala"; //
+            label4.Text = "Kampala";
             label5.Text = "Gulu";
             label6.Text = "Lira";
             checkForBuPr();
@@ -163,7 +163,7 @@ namespace Chernobyl2077Forms
         public void Quiz3()
         {
             DeBuSet();
-            image2.Image = Image.FromFile(path + @"/" + @"insert image");
+            image2.Image = Image.FromFile(path + @"/" + @"europe.jpg");
             image2.Location = new Point(775, 13);
             image2.Size = new Size(622, 500);
             this.image2.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -180,13 +180,13 @@ namespace Chernobyl2077Forms
         public void Quiz4()
         {
             DeBuSet();
-            image2.Image = Image.FromFile(path + @"/" + @"insert image");
+            image2.Image = Image.FromFile(path + @"/" + @"USA_states.jpg");
             image2.Location = new Point(775, 13);
-            image2.Size = new Size(622, 500);
+            image2.Size = new Size(622, 391);
             this.image2.SizeMode = PictureBoxSizeMode.StretchImage;
             Controls.Add(image2);
-            label1.Text = "?How many states in USA";
-            label3.Text = "50"; //
+            label1.Text = "How many states in USA";
+            label3.Text = "50";
             label4.Text = "about a million";
             label5.Text = "1";
             label6.Text = "16";
@@ -197,16 +197,16 @@ namespace Chernobyl2077Forms
         public void Quiz5()
         {
             DeBuSet();
-            image2.Image = Image.FromFile(path + @"/" + @"insert image");
+            image2.Image = Image.FromFile(path + @"/" + @"Africa.jpg");
             image2.Location = new Point(775, 13);
-            image2.Size = new Size(622, 500);
+            image2.Size = new Size(615, 615);
             this.image2.SizeMode = PictureBoxSizeMode.StretchImage;
             Controls.Add(image2);
-            label1.Text = "?How many countries in Africa";
+            label1.Text = "How many countries in Africa";
             label3.Text = "53";
             label4.Text = "a few";
-            label5.Text = "54"; //
-            label6.Text = "45"; 
+            label5.Text = "54";
+            label6.Text = "45";
             checkForBuPr();
             RiAns3();
             Quiz6();
@@ -214,14 +214,14 @@ namespace Chernobyl2077Forms
         public void Quiz6()
         {
             DeBuSet();
-            image2.Image = Image.FromFile(path + @"/" + @"insert image");
+            image2.Image = Image.FromFile(path + @"/" + @"flagmap_estonia.jpg");
             image2.Location = new Point(775, 13);
-            image2.Size = new Size(622, 500);
+            image2.Size = new Size(622, 381);
             this.image2.SizeMode = PictureBoxSizeMode.StretchImage;
             Controls.Add(image2);
-            label1.Text = "?How many counties in Estonia";
+            label1.Text = "How many counties in Estonia";
             label3.Text = "13";
-            label4.Text = "15"; //
+            label4.Text = "15";
             label5.Text = "16";
             label6.Text = "19";
             checkForBuPr();
@@ -231,13 +231,13 @@ namespace Chernobyl2077Forms
         public void Quiz7()
         {
             DeBuSet();
-            image2.Image = Image.FromFile(path + @"/" + @"insert image");
+            image2.Image = Image.FromFile(path + @"/" + @"Washington.jpg");
             image2.Location = new Point(775, 13);
             image2.Size = new Size(622, 500);
             this.image2.SizeMode = PictureBoxSizeMode.StretchImage;
             Controls.Add(image2);
-            label1.Text = "?What is the capital city of USA";
-            label3.Text = "Washington"; //
+            label1.Text = "What is the capital city of USA";
+            label3.Text = "Washington";
             label4.Text = "New York";
             label5.Text = "Boston";
             label6.Text = "London";
@@ -248,16 +248,16 @@ namespace Chernobyl2077Forms
         public void Quiz8()
         {
             DeBuSet();
-            image2.Image = Image.FromFile(path + @"/" + @"insert image");
+            image2.Image = Image.FromFile(path + @"/" + @"London.jpg");
             image2.Location = new Point(775, 13);
-            image2.Size = new Size(622, 500);
+            image2.Size = new Size(622, 411);
             this.image2.SizeMode = PictureBoxSizeMode.StretchImage;
             Controls.Add(image2);
-            label1.Text = "?What is the capital city of UK";
+            label1.Text = "What is the capital city of UK";
             label3.Text = "Washing a ton";
             label4.Text = "Glasgow";
             label5.Text = "Boston";
-            label6.Text = "London"; //
+            label6.Text = "London";
             checkForBuPr();
             RiAns4();
             Quiz9();
@@ -265,9 +265,9 @@ namespace Chernobyl2077Forms
         public void Quiz9()
         {
             DeBuSet();
-            image2.Image = Image.FromFile(path + @"/" + @"insert image");
+            image2.Image = Image.FromFile(path + @"/" + @"USA.jpg");
             image2.Location = new Point(775, 13);
-            image2.Size = new Size(622, 500);
+            image2.Size = new Size(622, 409);
             this.image2.SizeMode = PictureBoxSizeMode.StretchImage;
             Controls.Add(image2);
             label1.Text = "?How many km² is US";
@@ -282,14 +282,13 @@ namespace Chernobyl2077Forms
             checkForBuPr();
             RiAns2();
             Quiz10();
-
         }
         public void Quiz10()
         {
             DeBuSet();
-            image2.Image = Image.FromFile(path + @"/" + @"insert image");
-            image2.Location = new Point(775, 13);
-            image2.Size = new Size(622, 500);
+            image2.Image = Image.FromFile(path + @"/" + @"UK.gif");
+            image2.Location = new Point(850, 13);
+            image2.Size = new Size(486, 587);
             this.image2.SizeMode = PictureBoxSizeMode.StretchImage;
             Controls.Add(image2);
             label1.Text = "?How many km² is UK";
@@ -304,12 +303,11 @@ namespace Chernobyl2077Forms
             checkForBuPr();
             RiAns3();
             Quiz11();
-
         }
         public void Quiz11()
         {
             DeBuSet();
-            image2.Image = Image.FromFile(path + @"/" + @"insert image");
+            image2.Image = Image.FromFile(path + @"/" + @"Africakm.jpg");
             image2.Location = new Point(775, 13);
             image2.Size = new Size(622, 500);
             this.image2.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -322,12 +320,11 @@ namespace Chernobyl2077Forms
             checkForBuPr();
             RiAns2();
             Quiz12();
-
         }
         public void Quiz12()
         {
             DeBuSet();
-            image2.Image = Image.FromFile(path + @"/" + @"insert image");
+            image2.Image = Image.FromFile(path + @"/" + @"world.png");
             image2.Location = new Point(775, 13);
             image2.Size = new Size(622, 500);
             this.image2.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -345,7 +342,7 @@ namespace Chernobyl2077Forms
         public void Quiz13()
         {
             DeBuSet();
-            image2.Image = Image.FromFile(path + @"/" + @"insert image");
+            image2.Image = Image.FromFile(path + @"/" + @"usapop.jpg");
             image2.Location = new Point(775, 13);
             image2.Size = new Size(622, 500);
             this.image2.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -363,7 +360,7 @@ namespace Chernobyl2077Forms
         public void Quiz14()
         {
             DeBuSet();
-            image2.Image = Image.FromFile(path + @"/" + @"insert image");
+            image2.Image = Image.FromFile(path + @"/" + @"ukpop.jpg");
             image2.Location = new Point(775, 13);
             image2.Size = new Size(622, 500);
             this.image2.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -382,7 +379,7 @@ namespace Chernobyl2077Forms
         public void Quiz15()
         {
             DeBuSet();
-            image2.Image = Image.FromFile(path + @"/" + @"insert image");
+            image2.Image = Image.FromFile(path + @"/" + @"sauepop.jpg");
             image2.Location = new Point(775, 13);
             image2.Size = new Size(622, 500);
             this.image2.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -402,7 +399,7 @@ namespace Chernobyl2077Forms
         public void Quiz16()
         {
             DeBuSet();
-            image2.Image = Image.FromFile(path + @"/" + @"insert image");
+            image2.Image = Image.FromFile(path + @"/" + @"doge-mining.jpg");
             image2.Location = new Point(775, 13);
             image2.Size = new Size(622, 500);
             this.image2.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -422,7 +419,7 @@ namespace Chernobyl2077Forms
         public void Quiz17()
         {
             DeBuSet();
-            image2.Image = Image.FromFile(path + @"/" + @"insert image");
+            image2.Image = Image.FromFile(path + @"/" + @"chinapop.jpg");
             image2.Location = new Point(775, 13);
             image2.Size = new Size(622, 500);
             this.image2.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -441,7 +438,7 @@ namespace Chernobyl2077Forms
         public void Quiz18()
         {
             DeBuSet();
-            image2.Image = Image.FromFile(path + @"/" + @"insert image");
+            image2.Image = Image.FromFile(path + @"/" + @"kiev.jpg");
             image2.Location = new Point(775, 13);
             image2.Size = new Size(622, 500);
             this.image2.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -460,7 +457,7 @@ namespace Chernobyl2077Forms
         public void Quiz19()
         {
             DeBuSet();
-            image2.Image = Image.FromFile(path + @"/" + @"insert image");
+            image2.Image = Image.FromFile(path + @"/" + @"ljubljana.jpg");
             image2.Location = new Point(775, 13);
             image2.Size = new Size(622, 500);
             this.image2.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -479,7 +476,7 @@ namespace Chernobyl2077Forms
         public void Quiz20()
         {
             DeBuSet();
-            image2.Image = Image.FromFile(path + @"/" + @"insert image");
+            image2.Image = Image.FromFile(path + @"/" + @"ugandapop.jpg");
             image2.Location = new Point(775, 13);
             image2.Size = new Size(622, 500);
             this.image2.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -497,6 +494,11 @@ namespace Chernobyl2077Forms
         }
         public void QuizEnd()
         {
+            image2.Image = Image.FromFile(path + @"/" + @"tenor.gif");
+            image2.Location = new Point(0, 0);
+            image2.Size = new Size(1417, 659);
+            this.image2.SizeMode = PictureBoxSizeMode.StretchImage;
+            //this.image2.Visible = ;
             this.button5.Visible = false;
             this.button1.Visible = false;
             this.button2.Visible = false;
@@ -510,6 +512,7 @@ namespace Chernobyl2077Forms
             label13.Visible = false;
             label12.Visible = false;
             label16.Visible = true;
+
         }
 
         public static void checkForBuPr()
@@ -803,6 +806,11 @@ namespace Chernobyl2077Forms
         {
             checkBox1.Visible = true;
             checkBox2.Visible = true;
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
         }
         //public void Timer1sec()
         //{
