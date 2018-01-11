@@ -123,7 +123,7 @@ namespace Chernobyl2077Forms
             label1.Text = "?What is the capital of Germany";
             label3.Text = "Hamburg";
             label4.Text = "München";
-            label5.Text = "Berlin";
+            label5.Text = "Berlin"; //
             label6.Text = "Frankfurt";
             checkForBuPr();
             RiAns3();
@@ -136,7 +136,7 @@ namespace Chernobyl2077Forms
             DeBuSet();
             label1.Text = "?What is the capital of Uganda";
             label3.Text = "Jinja";
-            label4.Text = "Kampala";
+            label4.Text = "Kampala"; //
             label5.Text = "Gulu";
             label6.Text = "Lira";
             checkForBuPr();
@@ -150,7 +150,7 @@ namespace Chernobyl2077Forms
             label3.Text = "53";
             label4.Text = "a bazilion";
             label5.Text = "37";
-            label6.Text = "44";
+            label6.Text = "44"; //
             checkForBuPr();
             RiAns4();
             Quiz4();
@@ -159,7 +159,7 @@ namespace Chernobyl2077Forms
         {
             DeBuSet();
             label1.Text = "?How many states in USA";
-            label3.Text = "50";
+            label3.Text = "50"; //
             label4.Text = "about a million";
             label5.Text = "1";
             label6.Text = "16";
@@ -173,8 +173,8 @@ namespace Chernobyl2077Forms
             label1.Text = "?How many countries in Africa";
             label3.Text = "53";
             label4.Text = "a few";
-            label5.Text = "54";
-            label6.Text = "45";
+            label5.Text = "54"; //
+            label6.Text = "45"; 
             checkForBuPr();
             RiAns3();
             Quiz6();
@@ -184,7 +184,7 @@ namespace Chernobyl2077Forms
             DeBuSet();
             label1.Text = "?How many counties in Estonia";
             label3.Text = "13";
-            label4.Text = "15";
+            label4.Text = "15"; //
             label5.Text = "16";
             label6.Text = "19";
             checkForBuPr();
@@ -195,7 +195,7 @@ namespace Chernobyl2077Forms
         {
             DeBuSet();
             label1.Text = "?What is the capital city of USA";
-            label3.Text = "Washington";
+            label3.Text = "Washington"; //
             label4.Text = "New York";
             label5.Text = "Boston";
             label6.Text = "London";
@@ -210,7 +210,7 @@ namespace Chernobyl2077Forms
             label3.Text = "Washing a ton";
             label4.Text = "Glasgow";
             label5.Text = "Boston";
-            label6.Text = "London";
+            label6.Text = "London"; //
             checkForBuPr();
             RiAns4();
             Quiz9();
@@ -224,7 +224,7 @@ namespace Chernobyl2077Forms
             //label5.Text = "10 000 000";
             //label6.Text = "9 757 000";
             label3.Text = "000 965 9";
-            label4.Text = "000 834 9";
+            label4.Text = "000 834 9"; // 
             label5.Text = "000 000 10";
             label6.Text = "000 757 9";
             checkForBuPr();
@@ -242,14 +242,83 @@ namespace Chernobyl2077Forms
             //label6.Text = "3 cheeseburgers";
             label3.Text = "500 245";
             label4.Text = "495 342";
-            label5.Text = "495 242";
+            label5.Text = "495 242"; //
             label14.Visible = true;
             label6.Text = "ccheeseburgers";
             checkForBuPr();
             RiAns3();
-            //Quiz11();
+            Quiz11();
 
         }
+        public void Quiz11()
+        {
+            DeBuSet();
+            label1.Text = "?How many km² is Africa";
+            label3.Text = "Three blocks";
+            label4.Text = "000 370 30"; //
+            label5.Text = "000 375 30";
+            label6.Text = "000 370 40";
+            checkForBuPr();
+            RiAns2();
+            Quiz12();
+
+        }
+        public void Quiz12()
+        {
+            DeBuSet();
+            label1.Text = "?How many countries are there in the world";
+            label3.Text = "3, USA, EU and Africa";
+            label4.Text = "186";
+            label5.Text = "200";
+            label6.Text = "195"; //
+            checkForBuPr();
+            RiAns4();
+            Quiz13();
+
+        }
+        public void Quiz13()
+        {
+            DeBuSet();
+            label1.Text = "?How many people live in the US";
+            // Correct 326,766,748
+            label3.Text = "748 766 326"; //
+            label4.Text = "000 800 330";
+            label5.Text = "Like 5?";
+            label6.Text = "000 700 400";
+            checkForBuPr();
+            RiAns1();
+            Quiz14();
+        }
+        public void Quiz14()
+        {
+            DeBuSet();
+            label1.Text = "?How many people live in the UK";
+            // Correct 66,573,504
+            label3.Text = "748 766 66"; //
+            label4.Text = "000 850 69";
+            label5.Text = "Like 5?";
+            label6.Text = "000 570 66";
+            checkForBuPr();
+            RiAns1();
+            Quiz15();
+
+        }
+        public void Quiz15()
+        {
+            DeBuSet();
+            label1.Text = "?How many people live in the UK";
+            // Correct 66,573,504
+            label3.Text = "748 766 66"; //
+            label4.Text = "000 850 69";
+            label5.Text = "Like 5?";
+            label6.Text = "000 570 66";
+            checkForBuPr();
+            RiAns1();
+            //Quiz15();
+
+        }
+
+
         public static void checkForBuPr()
         {
             while (BuIsPr == false)
@@ -260,6 +329,7 @@ namespace Chernobyl2077Forms
         public void DeBuSet()
         {
             label13.Text = score.ToString();
+            Score10();
             new System.Threading.ManualResetEvent(false).WaitOne(1000);
             this.button1.BackColor = System.Drawing.Color.Gainsboro;
             this.button2.BackColor = System.Drawing.Color.Gainsboro;
@@ -478,9 +548,22 @@ namespace Chernobyl2077Forms
             Images = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1082, 659);
+            this.ClientSize = new System.Drawing.Size(1417, 659);
         }
+        private void Score10()
+        {
+            if (score == 10)
+            {
+                this.label13.ForeColor = System.Drawing.Color.Red;
+                new System.Threading.ManualResetEvent(false).WaitOne(250);
+                this.label13.ForeColor = System.Drawing.Color.Black;
+                new System.Threading.ManualResetEvent(false).WaitOne(250);
+                this.label13.ForeColor = System.Drawing.Color.Red;
+                new System.Threading.ManualResetEvent(false).WaitOne(250);
+                this.label13.ForeColor = System.Drawing.Color.Black;
 
+            }
+        }
         private void button8_Click(object sender, EventArgs e)
         {
             Images = false;

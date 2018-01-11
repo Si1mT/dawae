@@ -257,6 +257,7 @@
             // label13
             // 
             this.label13.AutoSize = true;
+            this.label13.ForeColor = System.Drawing.Color.Black;
             this.label13.Location = new System.Drawing.Point(384, 209);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(25, 13);
