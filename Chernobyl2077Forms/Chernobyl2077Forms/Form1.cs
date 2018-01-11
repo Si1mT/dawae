@@ -29,6 +29,7 @@ namespace Chernobyl2077Forms
         public static bool BuIsPr2;
         public static bool BuIsPr3;
         public static bool BuIsPr4;
+        public static bool Images;
         private void label13_Click(object sender, EventArgs e)
         {
             label13.Text = score.ToString();
@@ -119,7 +120,7 @@ namespace Chernobyl2077Forms
         public void Quiz1()
         {
             this.label1.Visible = true;
-            label1.Text = "What is the capital of Germany";
+            label1.Text = "?What is the capital of Germany";
             label3.Text = "Hamburg";
             label4.Text = "München";
             label5.Text = "Berlin";
@@ -133,7 +134,7 @@ namespace Chernobyl2077Forms
         public void Quiz2()
         {
             DeBuSet();
-            label1.Text = "What is the capital of Uganda";
+            label1.Text = "?What is the capital of Uganda";
             label3.Text = "Jinja";
             label4.Text = "Kampala";
             label5.Text = "Gulu";
@@ -145,7 +146,7 @@ namespace Chernobyl2077Forms
         public void Quiz3()
         {
             DeBuSet();
-            label1.Text = "How many countries in Europe";
+            label1.Text = "?How many countries in Europe";
             label3.Text = "53";
             label4.Text = "a bazilion";
             label5.Text = "37";
@@ -157,7 +158,7 @@ namespace Chernobyl2077Forms
         public void Quiz4()
         {
             DeBuSet();
-            label1.Text = "How many states in USA";
+            label1.Text = "?How many states in USA";
             label3.Text = "50";
             label4.Text = "about a million";
             label5.Text = "1";
@@ -169,7 +170,7 @@ namespace Chernobyl2077Forms
         public void Quiz5()
         {
             DeBuSet();
-            label1.Text = "How many countries in Africa";
+            label1.Text = "?How many countries in Africa";
             label3.Text = "53";
             label4.Text = "a few";
             label5.Text = "54";
@@ -181,7 +182,7 @@ namespace Chernobyl2077Forms
         public void Quiz6()
         {
             DeBuSet();
-            label1.Text = "How many counties in Estonia";
+            label1.Text = "?How many counties in Estonia";
             label3.Text = "13";
             label4.Text = "15";
             label5.Text = "16";
@@ -193,7 +194,7 @@ namespace Chernobyl2077Forms
         public void Quiz7()
         {
             DeBuSet();
-            label1.Text = "What is the capital city of USA";
+            label1.Text = "?What is the capital city of USA";
             label3.Text = "Washington";
             label4.Text = "New York";
             label5.Text = "Boston";
@@ -205,7 +206,7 @@ namespace Chernobyl2077Forms
         public void Quiz8()
         {
             DeBuSet();
-            label1.Text = "What is the capital city of UK";
+            label1.Text = "?What is the capital city of UK";
             label3.Text = "Washing a ton";
             label4.Text = "Glasgow";
             label5.Text = "Boston";
@@ -217,11 +218,15 @@ namespace Chernobyl2077Forms
         public void Quiz9()
         {
             DeBuSet();
-            label1.Text = "How many km² is US?";
-            label3.Text = "9 965 000";
-            label4.Text = "9 834 000";
-            label5.Text = "10 000 000";
-            label6.Text = "9 757 000";
+            label1.Text = "?How many km² is US";
+            //label3.Text = "9 965 000";
+            //label4.Text = "9 834 000";
+            //label5.Text = "10 000 000";
+            //label6.Text = "9 757 000";
+            label3.Text = "000 965 9";
+            label4.Text = "000 834 9";
+            label5.Text = "000 000 10";
+            label6.Text = "000 757 9";
             checkForBuPr();
             RiAns2();
             Quiz10();
@@ -230,11 +235,16 @@ namespace Chernobyl2077Forms
         public void Quiz10()
         {
             DeBuSet();
-            label1.Text = "How many km² is UK?";
-            label3.Text = "245 500";
-            label4.Text = "342 495";
-            label5.Text = "242 495";
-            label6.Text = "3 cheeseburgers";
+            label1.Text = "?How many km² is UK";
+            //label3.Text = "245 500";
+            //label4.Text = "342 495";
+            //label5.Text = "242 495";
+            //label6.Text = "3 cheeseburgers";
+            label3.Text = "500 245";
+            label4.Text = "495 342";
+            label5.Text = "495 242";
+            label14.Visible = true;
+            label6.Text = "ccheeseburgers";
             checkForBuPr();
             RiAns3();
             //Quiz11();
@@ -381,7 +391,7 @@ namespace Chernobyl2077Forms
         {
             if (BuIsPr3 == true)
             {
-
+                label14.Visible = false;
                 BuIsPr = false;
                 BuIsPr3 = false;
                 this.button3.BackColor = System.Drawing.Color.LawnGreen;
@@ -389,6 +399,7 @@ namespace Chernobyl2077Forms
             }
             if (BuIsPr1 == true)
             {
+                label14.Visible = false;
                 BuIsPr = false;
                 BuIsPr1 = false;
                 this.button1.BackColor = System.Drawing.Color.Red;
@@ -397,7 +408,7 @@ namespace Chernobyl2077Forms
             }
             if (BuIsPr2 == true)
             {
-
+                label14.Visible = false;
                 BuIsPr = false;
                 BuIsPr2 = false;
                 this.button2.BackColor = System.Drawing.Color.Red;
@@ -407,6 +418,7 @@ namespace Chernobyl2077Forms
 
             if (BuIsPr4 == true)
             {
+                label14.Visible = false;
                 BuIsPr = false;
                 BuIsPr4 = false;
                 this.button4.BackColor = System.Drawing.Color.Red;
@@ -459,6 +471,22 @@ namespace Chernobyl2077Forms
         {
             BuIsPr = true;
             this.button6.Visible = false;
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            Images = true;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(1082, 659);
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            Images = false;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(772, 659);
         }
         //public void Timer1sec()
         //{
