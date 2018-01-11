@@ -247,8 +247,7 @@ namespace Chernobyl2077Forms
             label3.Text = "500 245";
             label4.Text = "495 342";
             label5.Text = "495 242"; //
-            label14.Visible = true;
-            label6.Text = "ccheeseburgers";
+            label6.Text = "a few cheeseburgers";
             checkForBuPr();
             RiAns3();
             Quiz11();
@@ -287,7 +286,7 @@ namespace Chernobyl2077Forms
             // Correct 326,766,748
             label3.Text = "748 766 326"; //
             label4.Text = "000 800 330";
-            label5.Text = "Like 5?";
+            label5.Text = "?Like 5";
             label6.Text = "000 700 400";
             checkForBuPr();
             RiAns1();
@@ -300,7 +299,7 @@ namespace Chernobyl2077Forms
             // Correct 66,573,504
             label3.Text = "748 766 66"; //
             label4.Text = "000 850 69";
-            label5.Text = "Like 5?";
+            label5.Text = "?Like 5";
             label6.Text = "000 570 66";
             checkForBuPr();
             RiAns1();
@@ -310,6 +309,7 @@ namespace Chernobyl2077Forms
         public void Quiz15()
         {
             DeBuSet();
+            this.label1.Location = new System.Drawing.Point(150, 57);
             label1.Text = "?How many people live in Saue, Harjumaa, Estonia";
             // Correct 66,573,504
             label3.Text = "6065"; //
@@ -324,6 +324,7 @@ namespace Chernobyl2077Forms
         public void Quiz16()
         {
             DeBuSet();
+            this.label1.Location = new System.Drawing.Point(267, 46);
             label1.Text = "?How much are doge coins worth";
             // Correct 66,573,504
             label3.Text = "0,00987 eur"; //
@@ -550,7 +551,6 @@ namespace Chernobyl2077Forms
         {
             if (BuIsPr3 == true)
             {
-                label14.Visible = false;
                 BuIsPr = false;
                 BuIsPr3 = false;
                 this.button3.BackColor = System.Drawing.Color.LawnGreen;
@@ -558,7 +558,6 @@ namespace Chernobyl2077Forms
             }
             if (BuIsPr1 == true)
             {
-                label14.Visible = false;
                 BuIsPr = false;
                 BuIsPr1 = false;
                 this.button1.BackColor = System.Drawing.Color.Red;
@@ -567,7 +566,6 @@ namespace Chernobyl2077Forms
             }
             if (BuIsPr2 == true)
             {
-                label14.Visible = false;
                 BuIsPr = false;
                 BuIsPr2 = false;
                 this.button2.BackColor = System.Drawing.Color.Red;
@@ -577,7 +575,6 @@ namespace Chernobyl2077Forms
 
             if (BuIsPr4 == true)
             {
-                label14.Visible = false;
                 BuIsPr = false;
                 BuIsPr4 = false;
                 this.button4.BackColor = System.Drawing.Color.Red;
@@ -669,6 +666,7 @@ namespace Chernobyl2077Forms
             this.button3.Visible = true;
             this.button4.Visible = true;
             this.label12.Visible = true;
+            this.label1.Visible = true;
             this.label13.Location = new System.Drawing.Point(704, 35);
             this.label13.Size = new System.Drawing.Size(25, 13);
             this.label12.Location = new System.Drawing.Point(646, 30);
@@ -686,6 +684,7 @@ namespace Chernobyl2077Forms
             this.button2.Visible = true;
             this.button3.Visible = true;
             this.button4.Visible = true;
+            this.label1.Visible = true;
             this.label12.Visible = true;
             this.label13.Location = new System.Drawing.Point(704, 35);
             this.label13.Size = new System.Drawing.Size(25, 13);
