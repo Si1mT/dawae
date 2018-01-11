@@ -696,6 +696,12 @@ namespace Chernobyl2077Forms
             this.ClientSize = new System.Drawing.Size(1417, 659);
             QuizEnd();
         }
+
+        private void checkBox3_CheckedChanged(object sender, EventArgs e)
+        {
+            checkBox1.Visible = true;
+            checkBox2.Visible = true;
+        }
         //public void Timer1sec()
         //{
         //        System.Timers.Timer aTimer = new System.Timers.Timer();
