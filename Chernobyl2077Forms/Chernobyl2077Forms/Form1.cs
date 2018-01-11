@@ -26,7 +26,6 @@ namespace Chernobyl2077Forms
 
         private void button1_Click(object sender, EventArgs e)
         {
-            new System.Threading.ManualResetEvent(false).WaitOne(1000);
             BuIsPr1 = true;
         }
 
@@ -47,19 +46,13 @@ namespace Chernobyl2077Forms
 
         private void button2_Click(object sender, EventArgs e)
         {
-            new System.Threading.ManualResetEvent(false).WaitOne(1000);
             BuIsPr2 = true;
         }
 
         public void button5_Click_1(object sender, EventArgs e)
         {
             this.button5.Visible = false;
-            this.button1.Visible = true;
-            this.button2.Visible = true;
-            this.button3.Visible = true;
-            this.button4.Visible = true;
-            Quiz();
-           
+            Quiz2();
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -103,11 +96,24 @@ namespace Chernobyl2077Forms
         //    //image.Size = new Size(500, 500);
         //    //this.Controls.Add(image);
         //}
-        public void Quiz()
+        public void Quiz2()
         {
             label1.Text = "What is the capital of Germany?";
-            new System.Threading.ManualResetEvent(false).WaitOne(1000);
             pictureBox1.Visible = true;
+            Quiz3();
+        }
+        public void Quiz3()
+        {
+            new System.Threading.ManualResetEvent(false).WaitOne(3000);
+            this.button1.Visible = true;
+            this.button2.Visible = true;
+            this.button3.Visible = true;
+            this.button4.Visible = true;
+            Quiz();
+        }
+        public void Quiz()
+        {
+
             label3.Text = "Hamburg";
             label4.Text = "München";
             label5.Text = "Berlin";
@@ -137,19 +143,56 @@ namespace Chernobyl2077Forms
 
         private void button3_Click(object sender, EventArgs e)
         {
-            new System.Threading.ManualResetEvent(false).WaitOne(1000);
             BuIsPr3 = true;
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            new System.Threading.ManualResetEvent(false).WaitOne(1000);
             BuIsPr4 = true;
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private System.Windows.Forms.Timer myTimer = new System.Windows.Forms.Timer();
+            private void StartAsyncTimedWork()
+        {
+            myTimer.Interval = 5000;
+            myTimer.Tick += new EventHandler(myTimer_Tick);
+            myTimer.Start(); 
+        }
+
+        private void myTimer_Tick(object sender, EventArgs e)
+        {
+            if (this.InvokeRequired)
+            {
+                /* Not on UI thread, reenter there... */
+                this.BeginInvoke(new EventHandler(myTimer_Tick), sender, e);
+            }
+            else
+            {
+                lock (myTimer)
+                {
+                    /* only work when this is no reentry while we are already working */
+                    if (this.myTimer.Enabled)
+                    {
+                        this.myTimer.Stop();
+                        this.doMyDelayedWork();
+                        this.myTimer.Start(); /* optionally restart for periodic work */
+                    }
+                }
+            }
+        }
+        private async Task delayedWork()
+        {
+            await Task.Delay(5000);
+            this.doMyDelayedWork();
+        }
+        private void StartAsyncTimedWork()
+        {
+            Task ignoredAwaitableResult = this.delayedWork();
         }
     }
 }
