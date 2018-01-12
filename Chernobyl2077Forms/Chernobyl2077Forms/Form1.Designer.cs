@@ -221,7 +221,7 @@
             this.label9.Text = "----->";
             this.label9.Visible = false;
             // 
-            // label10
+            / label10
             // 
             this.label10.AutoSize = true;
             this.label10.Location = new System.Drawing.Point(520, 100);

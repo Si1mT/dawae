@@ -10,9 +10,7 @@ using System.Windows.Forms;
 using System.IO;
 using System.Diagnostics;
 using System.Threading;
-using System.Threading;
 using System.Timers;
-using System.Windows.Forms;
 
 namespace Chernobyl2077Forms
 {
@@ -139,7 +137,6 @@ namespace Chernobyl2077Forms
             label6.Text = "Frankfurt";
             checkForBuPr();
             RiAns3();
-            //DeBuSet();
             Quiz2();
 
         }
@@ -271,10 +268,6 @@ namespace Chernobyl2077Forms
             this.image2.SizeMode = PictureBoxSizeMode.StretchImage;
             Controls.Add(image2);
             label1.Text = "?How many km² is US";
-            //label3.Text = "9 965 000";
-            //label4.Text = "9 834 000";
-            //label5.Text = "10 000 000";
-            //label6.Text = "9 757 000";
             label3.Text = "000 965 9";
             label4.Text = "000 834 9"; // 
             label5.Text = "000 000 10";
@@ -292,10 +285,6 @@ namespace Chernobyl2077Forms
             this.image2.SizeMode = PictureBoxSizeMode.StretchImage;
             Controls.Add(image2);
             label1.Text = "?How many km² is UK";
-            //label3.Text = "245 500";
-            //label4.Text = "342 495";
-            //label5.Text = "242 495";
-            //label6.Text = "3 cheeseburgers";
             label3.Text = "500 245";
             label4.Text = "495 342";
             label5.Text = "495 242"; //
@@ -348,7 +337,6 @@ namespace Chernobyl2077Forms
             this.image2.SizeMode = PictureBoxSizeMode.StretchImage;
             Controls.Add(image2);
             label1.Text = "?How many people live in the US";
-            // Correct 326,766,748
             label3.Text = "748 766 326"; //
             label4.Text = "000 800 330";
             label5.Text = "?Like 5";
@@ -366,7 +354,6 @@ namespace Chernobyl2077Forms
             this.image2.SizeMode = PictureBoxSizeMode.StretchImage;
             Controls.Add(image2);
             label1.Text = "?How many people live in the UK";
-            // Correct 66,573,504
             label3.Text = "748 766 66"; //
             label4.Text = "000 850 69";
             label5.Text = "?Like 5";
@@ -386,10 +373,9 @@ namespace Chernobyl2077Forms
             Controls.Add(image2);
             this.label1.Location = new System.Drawing.Point(150, 57);
             label1.Text = "?How many people live in Saue, Harjumaa, Estonia";
-            // Correct 66,573,504
-            label3.Text = "6065"; //
+            label3.Text = "6065"; 
             label4.Text = "1337";
-            label5.Text = "5810";
+            label5.Text = "5810";//
             label6.Text = "4753";
             checkForBuPr();
             RiAns3();
@@ -406,7 +392,6 @@ namespace Chernobyl2077Forms
             Controls.Add(image2);
             this.label1.Location = new System.Drawing.Point(267, 46);
             label1.Text = "?How much are doge coins worth";
-            // Correct 66,573,504
             label3.Text = "0,00987 eur"; //
             label4.Text = "0,00562 eur";
             label5.Text = "0,0907 eur";
@@ -425,7 +410,6 @@ namespace Chernobyl2077Forms
             this.image2.SizeMode = PictureBoxSizeMode.StretchImage;
             Controls.Add(image2);
             label1.Text = "?How many people live in China";
-            // Correct 1,412,648,363
             label3.Text = "000 000 412 1"; //
             label4.Text = "000 850 693 2";
             label5.Text = "?5";
@@ -444,7 +428,6 @@ namespace Chernobyl2077Forms
             this.image2.SizeMode = PictureBoxSizeMode.StretchImage;
             Controls.Add(image2);
             label1.Text = "?Which countries capital city is 'Kiev'";
-            // Correct 66,573,504
             label3.Text = "Ukraine"; //
             label4.Text = "Slovenia";
             label5.Text = "Poland";
@@ -463,13 +446,12 @@ namespace Chernobyl2077Forms
             this.image2.SizeMode = PictureBoxSizeMode.StretchImage;
             Controls.Add(image2);
             label1.Text = "?What is the capital of Slovenia";
-            // Correct 66,573,504
             label5.Text = "Ljubljana"; //
             label4.Text = "Celje";
             label3.Text = "Bled";
             label6.Text = "?Moscow";
             checkForBuPr();
-            RiAns3();
+            RiAns1();
             Quiz20();
 
         }
@@ -482,9 +464,8 @@ namespace Chernobyl2077Forms
             this.image2.SizeMode = PictureBoxSizeMode.StretchImage;
             Controls.Add(image2);
             label1.Text = "?How many people live in Uganda";
-            // Correct 66,573,504
-            label3.Text = "a few people and Knuckles"; //
-            label4.Text = "000 490 41";
+            label3.Text = "a few people and Knuckles"; 
+            label4.Text = "000 490 41";//
             label5.Text = "000 234 56";
             label6.Text = "000 570 66";
             checkForBuPr();
@@ -814,12 +795,5 @@ namespace Chernobyl2077Forms
         {
 
         }
-        //public void Timer1sec()
-        //{
-        //        System.Timers.Timer aTimer = new System.Timers.Timer();
-        //        aTimer.Interval = 5000;
-        //        aTimer.Enabled = true;
-        //}
-
     }
 }
